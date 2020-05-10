@@ -1,42 +1,25 @@
 <?php 
-// function  نوع الأول من  
-// function print_message(){
-//     echo "<h1>Learn PHP With Coder Shiyar</h1>";
-// }
-// print_message();
-// function نوع الثاني يمكنك إنشاء متغيرات ضمن () وتمرير بيانات لهم عند استدعاء  
-// function print_data($name,$year){
-// echo "<h2> Name: " . $name . " , Year: " .  $year . "</h2>";
-// }
-// print_data("Coder Shiyar",2000);
-// print_data("Hamid",2002);
 
+function setText(){
+    $text = "<h1>Coder Shiyar</h1>";
+    return  $text;
+}
+setText();
 
-// function result(){
-// echo "<h1>تم استدعاء الوظيفة</h1>";
-//     return "<p> Coder Shiyar </p>";
-// }
-
-// $getData = result();
-
-// echo $getData;
-
-
-function setName($name){
-
-    return "<h2> Name: $name</h2>"; 
+function setResult($number1 , $number2){
+    return $number1 * $number2;
 }
 
-function setData(){
+$getText = setText();
 
-    return "Coder Shiyar";
-}
+$getResult = setResult(10,50);
 
-if(setData() == true){
-echo "صح";
-}else if(setData() == false){
-    echo "غلط";
+echo $getResult;
+
+
+echo $getText;
+
+if(setText() === "Coder"){
+echo "تم تنفيذ اوامر";
 }
-echo setName("Coder Shiyar");
-echo setName("Hamid");
 ?>
